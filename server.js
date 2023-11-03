@@ -7,7 +7,7 @@ import { loginController, registerController, validateController } from './contr
 
 dotenv.config();
 
-connectDB();
+await connectDB();
 
 const app = express();
 app.use(express.json());
